@@ -1,0 +1,27 @@
+//Alex Fernando Bojorquez Rojas
+//Tarea 05 U4 - Maestra: Lucia Barron
+/*
+En este ejemplo, se crea un objeto Cliente c1 con ciertos valores de atributos. 
+Luego se clona c1 en c2, y se comprueba que los valores de los atributos de ambos objetos son iguales. 
+Luego se cambia el valor del atributo direccion de c2, y se comprueba que no afecta al valor del mismo atributo en c1.
+*/
+package tarea05;
+
+public class Tarea05 {
+
+    public static void main(String[] args) {
+        Cliente c1 = new Cliente("Juan", 30, "Av. Siempre Viva 123");
+        Cliente c2 = (Cliente) c1.clone();
+
+        System.out.println(c1.getNombre()); // Juan
+        System.out.println(c1.getDireccion()); // Av. Siempre Viva 123
+        System.out.println(c2.getNombre()); // Juan
+        System.out.println(c2.getDireccion()); // Av. Siempre Viva 123
+
+        c2.setDireccion("Calle Falsa 123");
+        System.out.println(c1.getDireccion()); // Av. Siempre Viva 123
+        System.out.println(c2.getDireccion()); // Calle Falsa 123
+    }
+
+    
+}
