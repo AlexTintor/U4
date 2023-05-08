@@ -22,7 +22,7 @@ public class Point {
     }
     
     @Override
-    public boolean equals(Object o){
+    public boolean equals(Object o){//Mal implementado
         Point p = (Point) o;
         return ((x==p.x) && (y==p.y));
     }
