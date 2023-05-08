@@ -1,0 +1,21 @@
+//Alex Fernando Bojorquez Rojas
+//Tarea 01 U4 - Maestra: Lucia Barron
+package tarea01;
+
+public class Point {
+    private int x;
+    private int y;
+    
+    public Point(int x, int y){
+        this.x=x;
+        this.y=y;
+    }
+    
+    public final void impresion(){
+        System.out.println("Clase Point");
+    }
+    
+    public String toString(){
+        return "X: "+x+" - Y: "+y;
+    }
+}
