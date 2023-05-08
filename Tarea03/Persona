@@ -28,8 +28,8 @@ public class Persona {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (obj == this) {
+    public boolean equals(Object obj) {//mal
+        if (obj == this) {//aqui mal
             return true;
         }
         if (!(obj instanceof Persona)) {
@@ -39,4 +39,3 @@ public class Persona {
         return nombre.equals(persona.nombre) && edad == persona.edad;
     }
 }
-
