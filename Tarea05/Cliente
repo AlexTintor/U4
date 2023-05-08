@@ -1,0 +1,32 @@
+//Alex Fernando Bojorquez Rojas
+//Tarea 05 U4 - Maestra: Lucia Barron
+/*
+El método clone() en ambas clases hace lo siguiente:
+Intenta clonar el objeto utilizando el método clone() de la clase Object, el cual genera una copia 
+superficial del objeto. Si es posible, este objeto clonado es devuelto.
+Si el objeto no es clonable, entonces se genera una nueva instancia de la clase Persona o Cliente 
+utilizando los valores de los atributos del objeto original.
+*/
+package tarea05;
+
+public class Cliente extends Persona  {
+
+    private String direccion;
+
+    public Cliente(String nombre, int edad, String direccion) {
+        super(nombre, edad);
+        this.direccion = direccion;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+    public void setDireccion(String direccion) {
+        this.direccion=direccion;
+    }
+
+    @Override
+    public Object clone() {
+        return super.clone();
+    }
+}
