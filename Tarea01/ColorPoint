@@ -1,0 +1,32 @@
+//Alex Fernando Bojorquez Rojas
+//Tarea 01 U4 - Maestra: Lucia Barron
+/*
+ERROR
+Marca error porque le decimos en la clase padre, que este es un metodo "final"
+lo que significa que no se puede redefinir, y estamos tratando de sobreescribirlo
+o "redefinirlo".
+SOLUCION
+Para solucionarlo debemos quitarle el "final" en el caso en el que si se quiera
+redefinir dicho metodo. Tambien podemos NO sobreescribir el metodo en la clase hija,
+y usar otro metodo.
+*/
+package tarea01;
+
+public class ColorPoint extends Point{
+    private int x;
+    private int y;
+    private String color="Rojo";
+    
+    public ColorPoint(int x, int y, String color){
+        super(x,y);
+        this.color=color;
+    }
+    
+    public void impresion1(){
+        System.out.println("Clase ColorPoint");
+    }
+    
+    public String toString (){
+        return super.toString()+" - Color: "+color;
+    }
+}
