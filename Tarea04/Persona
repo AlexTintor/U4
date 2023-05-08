@@ -1,0 +1,10 @@
+//Alex Fernando Bojorquez Rojas
+//Tarea 04 U4 - Maestra: Lucia Barron
+package tarea04;
+
+public class Persona {
+    private String nombre;
+    public Persona(String nombre){
+        this.nombre=nombre;
+    }
+}
