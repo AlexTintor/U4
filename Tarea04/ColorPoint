@@ -1,0 +1,26 @@
+//Alex Fernando Bojorquez Rojas
+//Tarea 04 U4 - Maestra: Lucia Barron
+package tarea04;
+
+public class ColorPoint extends Point{
+    private int x;
+    private int y;
+    private String color="Rojo";
+    
+    public ColorPoint(){
+        
+    }
+    public ColorPoint(int x, int y, String color){
+        super(x,y);
+        this.color=color;
+    }
+    
+    public void impresion1(){
+        System.out.println("Clase ColorPoint");
+    }
+    
+    public String toString (){
+        return super.toString()+" - Color: "+color;
+    }
+}
+
