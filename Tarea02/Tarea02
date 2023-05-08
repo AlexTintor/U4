@@ -1,0 +1,27 @@
+//Alex Fernando Bojorquez Rojas
+//Tarea 02 U4 - Maestra: Lucia Barron
+/*
+ERROR
+El error se produce porque estamos comparando un objeto de la clase Point con un objeto de 
+la clase Persona en el método equals. Como estos dos objetos son de clases diferentes, 
+Java no puede compararlos y lanza un error en tiempo de ejecución.
+
+SOLUCION
+Para solucionar este problema, podemos cambiar el tipo de variable p2 de Persona a Point 
+en la clase Tarea02, o eliminar la comparación entre p1 y p2 ya que no es necesaria en el programa.
+*/
+package tarea02;
+
+public class Tarea02 {
+
+    public static void main(String[] args) {
+        Point p1 = new Point();
+        Point p3 = new Point(1,3);
+        Persona p2 = new Persona("Juan");
+        
+        
+        System.out.println(p1.equals(p3));//false
+        System.out.println(p1.equals(p2));//ERROR
+    }
+    
+}
