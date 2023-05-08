@@ -2,7 +2,7 @@
 //Tarea 02 U4 - Maestra: Lucia Barron
 package tarea02;
 
-public class Persona {
+public class Persona {//agregar equals
     private String nombre;
     public Persona(String nombre){
         this.nombre=nombre;
