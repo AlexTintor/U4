@@ -21,12 +21,13 @@ public class Persona implements Cloneable {
     }
 
     @Override
-    public Object clone() {
-        try {
-            return super.clone();
-        } catch (CloneNotSupportedException e) {
-            return new Persona(this.nombre, this.edad);
+    public Object clone(){
+        Object obj = null;
+        try{
+            obj=super.clone();
+        }catch(CloneNotSupportedException ex){
+            System.out.println("Error al clonar");
         }
+        return obj;
     }
 }
-
