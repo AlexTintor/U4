@@ -9,7 +9,7 @@ utilizando los valores de los atributos del objeto original.
 */
 package tarea05;
 
-public class Cliente extends Persona  {
+public class Cliente extends Persona implements Cloneable{//No dice que es clonable
 
     private String direccion;
 
@@ -26,7 +26,16 @@ public class Cliente extends Persona  {
     }
 
     @Override
-    public Object clone() {
-        return super.clone();
+    public Object clone(){
+        Object obj = null;
+        try{
+            obj=super.clone();
+        }catch(CloneNotSupportedException ex){
+            System.out.println("Error al clonar");
+        }
+        return obj;
     }
+//    public Object clone() {
+//        return super.clone();
+//    }
 }
