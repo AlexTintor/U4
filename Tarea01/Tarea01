@@ -1,0 +1,17 @@
+//Alex Fernando Bojorquez Rojas
+//Tarea 01 U4 - Maestra: Lucia Barron
+package tarea01;
+
+public class Tarea01 {
+
+    public static void main(String[] args) {
+        Point p1 = new Point(1,2);
+        System.out.println(p1);
+        p1.impresion();
+        
+        ColorPoint cp1 = new ColorPoint(3,4,"Azul");
+        System.out.println(cp1);
+        cp1.impresion1();
+    }
+    
+}
