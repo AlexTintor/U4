@@ -1,0 +1,18 @@
+//Alex Fernando Bojorquez Rojas
+//Tarea 03 U4 - Maestra: Lucia Barron
+package tarea03;
+
+public class Tarea03 {
+
+    public static void main(String[] args) {
+        Persona p1 = new Persona("Alex", 18);
+        Persona p2 = new Persona("Juan", 15);
+        Persona p3 = p1;
+        Persona p4 = new Persona("Alex",18);
+        
+        System.out.println(p1.equals(p2));
+        System.out.println(p1.equals(p3));
+        System.out.println(p1.equals(p4));
+    }
+    
+}
