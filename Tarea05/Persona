@@ -1,0 +1,32 @@
+//Alex Fernando Bojorquez Rojas
+//Tarea 05 U4 - Maestra: Lucia Barron
+package tarea05;
+
+public class Persona implements Cloneable {
+    
+    private String nombre;
+    private int edad;
+
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    @Override
+    public Object clone() {
+        try {
+            return super.clone();
+        } catch (CloneNotSupportedException e) {
+            return new Persona(this.nombre, this.edad);
+        }
+    }
+}
+
